@@ -87,7 +87,6 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -162,7 +161,6 @@ body {
 }
 body .left-container {
   display: flex;
-  justify-content: center;
   align-items: center;
   height: 100vh;
   width: 40%;
@@ -171,20 +169,39 @@ body .left-container {
 body .left-container .sign-up-container {
   display: flex;
   width: 100%;
-  border: solid red 2px;
-  justify-content: space-around;
   flex-direction: column;
   align-items: center;
 }
 body .left-container .sign-up-container input {
   padding: 2%;
   margin: 2%;
+  width: 40%;
 }
-body .left-container .sign-up-container h1 {
-  font-size: 5rem;
+body .left-container .sign-up-container h2 {
+  font-size: 4rem;
+  color: white;
+}
+body .left-container .sign-up-container button {
+  width: 15%;
+  color: white;
+  padding: 1%;
+  border-radius: 4px;
+  border-color: #CCCCCC;
+  background-color: #CCCCCC;
 }
 body .right-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
   height: 100vh;
   width: 60%;
   background-color: #343C47;
+}
+body .right-container .title {
+  text-align: center;
+}
+body .right-container h1 {
+  color: white;
+  font-size: 5rem;
 }
