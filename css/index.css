@@ -154,34 +154,39 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
-body {
+.site-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
+  height: 100vh;
 }
-body .left-container {
+.site-container .left-container {
   display: flex;
   align-items: center;
   height: 100vh;
   width: 40%;
   background-color: dodgerblue;
 }
-body .left-container .sign-up-container {
+@media (max-width: 500px) {
+  .site-container .left-container {
+    width: 100%;
+  }
+}
+.site-container .left-container .sign-up-container {
   display: flex;
   width: 100%;
   flex-direction: column;
   align-items: center;
 }
-body .left-container .sign-up-container input {
+.site-container .left-container .sign-up-container input {
   padding: 2%;
   margin: 2%;
   width: 40%;
 }
-body .left-container .sign-up-container h2 {
+.site-container .left-container .sign-up-container h2 {
   font-size: 4rem;
   color: white;
 }
-body .left-container .sign-up-container button {
+.site-container .left-container .sign-up-container button {
   width: 15%;
   color: white;
   padding: 1%;
@@ -189,19 +194,29 @@ body .left-container .sign-up-container button {
   border-color: #CCCCCC;
   background-color: #CCCCCC;
 }
-body .right-container {
+.site-container .right-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-between;
   height: 100vh;
   width: 60%;
   background-color: #343C47;
 }
-body .right-container .title {
-  text-align: center;
+@media (max-width: 500px) {
+  .site-container .right-container {
+    display: none;
+  }
 }
-body .right-container h1 {
+.site-container .right-container .title {
+  display: flex;
+  width: 100%;
+  padding: 6%;
+  justify-content: center;
+  align-items: center;
+}
+.site-container .right-container .title h1 {
   color: white;
+  text-align: center;
   font-size: 5rem;
 }
