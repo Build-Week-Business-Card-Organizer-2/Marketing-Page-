@@ -158,50 +158,41 @@ p {
   display: flex;
   width: 100%;
   height: 100vh;
+  background-color: #343C47;
 }
 .site-container .left-container {
   display: flex;
-  flex-wrap: wrap;
   height: 100vh;
   width: 40%;
-  background-color: dodgerblue;
+  align-items: center;
 }
-.site-container .left-container nav {
-  width: 90%;
-  margin-top: 10vh;
-  text-align: right;
-  font-size: 3rem;
+.site-container .left-container .text-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 3%;
+  align-items: center;
 }
-.site-container .left-container nav a {
+.site-container .left-container .text-container p {
   color: white;
+  padding: 1% 0;
+  font-size: 2rem;
+}
+.site-container .left-container .text-container h2 {
+  color: white;
+  font-size: 4rem;
+}
+.site-container .left-container .text-container button {
+  width: 15%;
+  padding: 1%;
+  background-color: dodgerblue;
+  color: white;
+  border: none;
 }
 @media (max-width: 500px) {
   .site-container .left-container {
     width: 100%;
   }
-}
-.site-container .left-container .sign-up-container {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  align-items: center;
-}
-.site-container .left-container .sign-up-container input {
-  padding: 2%;
-  margin: 2%;
-  width: 40%;
-}
-.site-container .left-container .sign-up-container h2 {
-  font-size: 4rem;
-  color: white;
-}
-.site-container .left-container .sign-up-container button {
-  width: 15%;
-  color: white;
-  padding: 1%;
-  border-radius: 4px;
-  border-color: #CCCCCC;
-  background-color: #CCCCCC;
 }
 .site-container .right-container {
   display: flex;
@@ -210,7 +201,6 @@ p {
   justify-content: space-between;
   height: 100vh;
   width: 60%;
-  background-color: #343C47;
 }
 @media (max-width: 500px) {
   .site-container .right-container {
