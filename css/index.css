@@ -135,6 +135,7 @@ html,
 body {
   font-family: 'Ubuntu', sans-serif;
   color: black ;
+  background-color: #343C47;
 }
 h1,
 h2,
@@ -228,4 +229,8 @@ p {
   color: white;
   text-align: center;
   font-size: 5rem;
+}
+.site-container .right-container img {
+  max-width: 100%;
+  height: auto;
 }
