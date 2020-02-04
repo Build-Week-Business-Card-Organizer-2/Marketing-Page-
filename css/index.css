@@ -85,7 +85,6 @@ audio,
 video {
   margin: 0;
   padding: 0;
-  border: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -170,21 +169,22 @@ body {
   background-color: #343C47;
 }
 .container {
-  display: flex;
   background-color: #343C47;
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
-.container .one {
+.container .content-one {
   width: 60%;
   color: #FFFFFF;
 }
-.container .one .about {
+.container .content-one .about {
   margin: 18.5rem 15% 5% 20%;
 }
-.container .one .about h1 {
+.container .content-one .about h1 {
   margin-bottom: 5%;
 }
-.container .one .about .button {
+.container .content-one .about .button {
   background-color: dodgerblue;
   padding: 1.2rem 0 1.4rem;
   border-radius: 3px;
@@ -194,24 +194,30 @@ body {
   text-align: center;
   margin: 10% 0 0 15%;
 }
-.container .two {
+.container .content-two {
   width: 40%;
   color: #FFFFFF;
 }
-.container .two .logo-section {
+.container .content-two .title-section {
   margin: 15rem 0 0 0;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
-.container .two .logo-section h2 {
+.container .content-two .title-section h2 {
   text-align: center;
   line-height: 6rem;
   margin-bottom: 8rem;
 }
-.container .two .logo-section .logo {
-  margin: 0 2.4rem 0 20%;
+.container .absolute-logo {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40%;
 }
-.container .two .logo-section .logo img {
-  width: 54.2rem;
+.container .absolute-logo .logo {
+  margin: 0 2.4rem 0 0;
+}
+.container .absolute-logo .logo img {
+  width: 100%;
 }
