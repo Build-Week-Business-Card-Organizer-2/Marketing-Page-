@@ -294,16 +294,24 @@ body {
   font-size: 3rem;
   margin: 0 0 5% 0;
 }
-.container-about .content-about .about .button {
-  background-color: dodgerblue;
+.container-about .content-about .about a {
+  color: #FFFFFF;
+  text-decoration: none;
+  margin: 10% 0 0 15%;
+}
+.container-about .content-about .about a .button {
+  background-color: #1EA7FC;
   padding: 1.2rem 0 1.4rem;
   border-radius: 3px;
   width: 10.5rem;
   height: 3.8rem;
   font-size: 1.3rem;
   text-align: center;
-  margin: 10% 0 0 15%;
-  color: #FFFFFF;
+}
+.container-about .content-about .about a .button:hover {
+  background-color: #FFFFFF;
+  border: 1px solid #1EA7FC;
+  color: #1EA7FC;
 }
 .container-about .content-logo-about {
   background-color: #343C47;
