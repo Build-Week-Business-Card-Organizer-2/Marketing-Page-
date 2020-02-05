@@ -213,11 +213,12 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 40%;
+  width: 39%;
 }
 .container .absolute-logo .logo {
   margin: 0 2.4rem 0 0;
 }
 .container .absolute-logo .logo img {
   width: 100%;
+  max-height: 550px;
 }
