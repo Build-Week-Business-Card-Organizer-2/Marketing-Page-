@@ -144,22 +144,15 @@ h5 {
 }
 h1 {
   font-size: 6.4rem;
-  font-weight: 500;
-  line-height: 7.4rem;
 }
 h2 {
   font-size: 6.4rem;
-  padding-bottom: 1rem;
 }
 h4 {
   font-size: 2.5rem;
-  padding-bottom: 1rem;
 }
 p {
-  line-height: 3.4rem;
   font-size: 3rem;
-  padding-bottom: 2rem;
-  font-weight: 500;
 }
 img {
   max-width: 100%;
@@ -167,6 +160,103 @@ img {
 }
 body {
   background-color: #343C47;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 15% 10% 0 0;
+}
+nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 2rem;
+}
+.container-cta {
+  display: flex;
+  height: 100vh;
+  overflow-y: hidden;
+}
+.container-cta .content-signup {
+  background-color: #1EA7FC;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.container-cta .content-signup .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  margin: 15% 0 0 0;
+}
+.container-cta .content-signup .form h1 {
+  color: #FFFFFF;
+  font-size: 6.4rem;
+  margin-bottom: 15%;
+}
+.container-cta .content-signup .form form {
+  width: 100%;
+}
+.container-cta .content-signup .form form input {
+  width: 100%;
+  padding: 4% 20% 4% 3%;
+  border-radius: 3px 3px 0 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #343C47;
+}
+.container-cta .content-signup .form form p {
+  font-size: 1rem;
+  margin: 1% 0 3% 4%;
+}
+.container-cta .content-signup .form form a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #AE0725;
+}
+.container-cta .content-signup .form form .last-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.container-cta .content-signup .button {
+  background-color: #CCCCCC;
+  border-radius: 3px;
+  padding: 3% 7%;
+  margin: 10% 0 0 0;
+}
+.container-cta .content-signup .button a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.container-cta .content-cta {
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;
+}
+.container-cta .content-cta .right-side-cta {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 2%;
+}
+.container-cta .content-cta .right-side-cta h2 {
+  color: #FFFFFF;
+  text-align: center;
+  padding: 25% 0 10% 0;
+}
+.container-cta .content-cta .right-side-cta .logo-cta {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .container {
   background-color: #343C47;
