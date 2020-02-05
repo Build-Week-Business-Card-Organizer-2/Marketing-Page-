@@ -155,48 +155,43 @@ p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
-.site-container {
+body {
   display: flex;
   width: 100%;
   height: 100vh;
 }
-.site-container .left-container {
+body .left-container {
   display: flex;
   flex-wrap: wrap;
   height: 100vh;
   width: 40%;
   background-color: dodgerblue;
 }
-.site-container .left-container nav {
+body .left-container nav {
   width: 90%;
   margin-top: 10vh;
   text-align: right;
   font-size: 3rem;
 }
-.site-container .left-container nav a {
+body .left-container nav a {
   color: white;
 }
-@media (max-width: 500px) {
-  .site-container .left-container {
-    width: 100%;
-  }
-}
-.site-container .left-container .sign-up-container {
+body .left-container .sign-up-container {
   display: flex;
   width: 100%;
   flex-direction: column;
   align-items: center;
 }
-.site-container .left-container .sign-up-container input {
+body .left-container .sign-up-container input {
   padding: 2%;
   margin: 2%;
   width: 40%;
 }
-.site-container .left-container .sign-up-container h2 {
+body .left-container .sign-up-container h2 {
   font-size: 4rem;
   color: white;
 }
-.site-container .left-container .sign-up-container button {
+body .left-container .sign-up-container button {
   width: 15%;
   color: white;
   padding: 1%;
@@ -204,7 +199,17 @@ p {
   border-color: #CCCCCC;
   background-color: #CCCCCC;
 }
-.site-container .right-container {
+@media (max-width: 500px) {
+  body .left-container {
+    width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  body .left-container {
+    width: 60%;
+  }
+}
+body .right-container {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -213,24 +218,29 @@ p {
   width: 60%;
   background-color: #343C47;
 }
-@media (max-width: 500px) {
-  .site-container .right-container {
-    display: none;
-  }
-}
-.site-container .right-container .title {
+body .right-container .title {
   display: flex;
   width: 100%;
   padding: 6%;
   justify-content: center;
   align-items: center;
 }
-.site-container .right-container .title h1 {
+body .right-container .title h1 {
   color: white;
   text-align: center;
   font-size: 5rem;
 }
-.site-container .right-container img {
+body .right-container img {
   max-width: 100%;
   height: auto;
+}
+@media (max-width: 500px) {
+  body .right-container {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  body .right-container {
+    width: 40%;
+  }
 }
