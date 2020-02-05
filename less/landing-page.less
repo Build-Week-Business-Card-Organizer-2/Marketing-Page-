@@ -21,6 +21,10 @@
                 color: @white;
                 text-decoration: none;
                 font-size: 2rem;
+
+                &:hover {
+                    color: @shiraz;
+                }
             }
         }
         .form {
@@ -54,12 +58,17 @@
                 p {
                     font-size: 1rem;
                     margin: 1% 0 3% 4%;
+                    color: @bright-grey;
                 }
 
                 a {
                     font-size: 1.2rem;
                     text-decoration: none;
                     color: @shiraz;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
                 }
 
                 .last-input {
@@ -70,12 +79,21 @@
                 }
             }
         }
-
+        
         .button {
             background-color: #CCCCCC;
             border-radius: 3px;
             padding: 3% 7%;
             margin: 10% 0 0 0;
+            
+            &:hover {
+                    background-color: @white;
+                    border: 1px solid @bright-grey;
+
+                    a {
+                        color: @bright-grey;
+                    }
+                }
 
             a {
                 color: @white;

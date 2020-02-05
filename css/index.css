@@ -189,6 +189,9 @@ body {
   text-decoration: none;
   font-size: 2rem;
 }
+.container-cta .content-signup nav a:hover {
+  color: #AE0725;
+}
 .container-cta .content-signup .form {
   display: flex;
   flex-direction: column;
@@ -217,11 +220,15 @@ body {
 .container-cta .content-signup .form form p {
   font-size: 1rem;
   margin: 1% 0 3% 4%;
+  color: #343C47;
 }
 .container-cta .content-signup .form form a {
   font-size: 1.2rem;
   text-decoration: none;
   color: #AE0725;
+}
+.container-cta .content-signup .form form a:hover {
+  text-decoration: underline;
 }
 .container-cta .content-signup .form form .last-input {
   display: flex;
@@ -234,6 +241,13 @@ body {
   border-radius: 3px;
   padding: 3% 7%;
   margin: 10% 0 0 0;
+}
+.container-cta .content-signup .button:hover {
+  background-color: #FFFFFF;
+  border: 1px solid #343C47;
+}
+.container-cta .content-signup .button:hover a {
+  color: #343C47;
 }
 .container-cta .content-signup .button a {
   color: #FFFFFF;
