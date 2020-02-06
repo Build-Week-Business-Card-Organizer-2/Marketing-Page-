@@ -8,13 +8,13 @@ body{
     flex-wrap: wrap;
     height: 100vh;
     width: 40%;
-    background-color:dodgerblue;
+    background-color: @bg-color-one;
 
-    @media(max-width:800px){
+    @media(max-width:@tablet){
         width: 60%;
     }
 
-    @media (max-width:500px){
+    @media (max-width:@phone){
         width: 100%;
     }
 
@@ -49,7 +49,7 @@ body{
             color: white;
             padding: 1%;
             border-radius: 4px;
-            border-color:  #CCCCCC;
+            border:none;
             background-color: #CCCCCC;
         }
     }
@@ -63,7 +63,7 @@ body{
     justify-content: space-between;
     height: 100vh;
     width: 60%;
-    background-color:#343C47;
+    background-color:@bg-color-two;
 
     .title{
         display: flex;
@@ -76,8 +76,8 @@ body{
             text-align: center;
             font-size: 5rem;
 
-            @media(max-width:800px){
-                color: dodgerblue;
+            @media(max-width:@tablet){
+                color: @bg-color-one;
             }
         }
     }
@@ -87,13 +87,13 @@ body{
         height: auto;
     }
 
-    @media(max-width:500px) {
+    @media(max-width:@phone) {
         display: none;
     }
 
-    @media(max-width: 800px){
+    @media(max-width: @tablet){
         width: 40%;
-        background-color: dodgerblue;
+        background-color: @bg-color-one;
     }
 
 }
