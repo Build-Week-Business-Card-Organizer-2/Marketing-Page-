@@ -16,12 +16,22 @@
             margin-left: 10%;
             justify-content: space-between;
         }
+
+        @media @phone {
+            width: 100%;
+            margin-left: 0;
+            justify-content: flex-start;       
+        }
         
         nav {
             display: flex;
             justify-content: flex-end;
             width: 100%;
             margin: 15% 10% 0 0;
+
+            @media @phone {
+                margin: 10% 10% 0 0;   
+            }
         
             a {
                 color: @white;
@@ -38,7 +48,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            width: 60%;
+            width: 62%;
             margin: 15% 0 0 0;
 
             @media @tablet {
@@ -46,10 +56,20 @@
                 margin-top: 20%;
             }
 
+            @media @phone {
+                width: 90%;
+                margin-top: 10%;
+            }
+
             h1 {
                 color: @white;
                 font-size: 6.4rem;
                 margin-bottom: 15%;
+
+                @media @phone {
+                    font-size: 5rem;
+                    margin-bottom: 5%;
+                }
             }
 
             form {
@@ -71,7 +91,7 @@
                 }
 
                 p {
-                    font-size: 1rem;
+                    font-size: 1.2rem;
                     margin: 1% 0 3% 4%;
                     color: @bright-grey;
 
@@ -118,6 +138,22 @@
                 color: @white;
                 text-decoration: none;
             }
+
+            @media @tablet {
+                padding: 4% 10%;
+
+                a {
+                    font-size: 1.5rem;
+                }
+            }
+
+            @media @phone {
+                padding: 4% 10%;
+
+                a {
+                    font-size: 2rem;
+                }
+            }
         }
 
         .second-logo {
@@ -133,6 +169,10 @@
                 img {
                     width: 35%
                 }
+            }
+
+            @media @phone {
+                display: none;
             }
         }
     }
