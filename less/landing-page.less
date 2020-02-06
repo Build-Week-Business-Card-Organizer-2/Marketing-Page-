@@ -10,6 +10,12 @@
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
+
+        @media @tablet {
+            width: 80%;
+            margin-left: 10%;
+            justify-content: space-between;
+        }
         
         nav {
             display: flex;
@@ -35,6 +41,11 @@
             width: 60%;
             margin: 15% 0 0 0;
 
+            @media @tablet {
+                width: 60%;
+                margin-top: 20%;
+            }
+
             h1 {
                 color: @white;
                 font-size: 6.4rem;
@@ -47,18 +58,26 @@
 
                 input {
                     width: 100%;
-                    padding: 4% 20% 4% 3%;
+                    padding: 4% 0% 4% 3%;
                     border-radius: 3px 3px 0 0;
                     border-top: none;
                     border-left: none;
                     border-right: none;
                     border-bottom: 1px solid @bright-grey;
+
+                    @media @tablet {
+                        padding: 6% 0% 6% 5%;
+                    }
                 }
 
                 p {
                     font-size: 1rem;
                     margin: 1% 0 3% 4%;
                     color: @bright-grey;
+
+                    @media @tablet {
+                        margin: 2% 0 6% 4%;
+                    }
                 }
 
                 a {
@@ -100,12 +119,33 @@
                 text-decoration: none;
             }
         }
+
+        .second-logo {
+            width: 125%;
+            display: none;
+            margin: -13% 5% 0 0;
+
+            @media @tablet {
+                display: flex;
+                justify-content: flex-end;
+        
+
+                img {
+                    width: 35%
+                }
+            }
+        }
     }
 
     .content-cta {
         width: 60%;
         display: flex;
         justify-content: flex-end;
+
+        @media @tablet {
+            display: none;
+            
+        }
 
         .right-side-cta {
             width: 60%;

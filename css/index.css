@@ -178,6 +178,13 @@ body {
   align-items: center;
   justify-content: flex-start;
 }
+@media (max-width: 800px) {
+  .container-cta .content-signup {
+    width: 80%;
+    margin-left: 10%;
+    justify-content: space-between;
+  }
+}
 .container-cta .content-signup nav {
   display: flex;
   justify-content: flex-end;
@@ -200,6 +207,12 @@ body {
   width: 60%;
   margin: 15% 0 0 0;
 }
+@media (max-width: 800px) {
+  .container-cta .content-signup .form {
+    width: 60%;
+    margin-top: 20%;
+  }
+}
 .container-cta .content-signup .form h1 {
   color: #FFFFFF;
   font-size: 6.4rem;
@@ -210,17 +223,27 @@ body {
 }
 .container-cta .content-signup .form form input {
   width: 100%;
-  padding: 4% 20% 4% 3%;
+  padding: 4% 0% 4% 3%;
   border-radius: 3px 3px 0 0;
   border-top: none;
   border-left: none;
   border-right: none;
   border-bottom: 1px solid #343C47;
 }
+@media (max-width: 800px) {
+  .container-cta .content-signup .form form input {
+    padding: 6% 0% 6% 5%;
+  }
+}
 .container-cta .content-signup .form form p {
   font-size: 1rem;
   margin: 1% 0 3% 4%;
   color: #343C47;
+}
+@media (max-width: 800px) {
+  .container-cta .content-signup .form form p {
+    margin: 2% 0 6% 4%;
+  }
 }
 .container-cta .content-signup .form form a {
   font-size: 1.2rem;
@@ -253,10 +276,29 @@ body {
   color: #FFFFFF;
   text-decoration: none;
 }
+.container-cta .content-signup .second-logo {
+  width: 125%;
+  display: none;
+  margin: -13% 5% 0 0;
+}
+@media (max-width: 800px) {
+  .container-cta .content-signup .second-logo {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .container-cta .content-signup .second-logo img {
+    width: 35%;
+  }
+}
 .container-cta .content-cta {
   width: 60%;
   display: flex;
   justify-content: flex-end;
+}
+@media (max-width: 800px) {
+  .container-cta .content-cta {
+    display: none;
+  }
 }
 .container-cta .content-cta .right-side-cta {
   width: 60%;
