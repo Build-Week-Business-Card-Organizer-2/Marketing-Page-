@@ -11,6 +11,18 @@
         align-items: center;
         justify-content: flex-start;
 
+        @media @tablet {
+            width: 80%;
+            margin-left: 10%;
+            justify-content: space-between;
+        }
+
+        @media @phone {
+            width: 100%;
+            margin-left: 0;
+            justify-content: flex-start;       
+        }
+
         nav {
             display: none;
             // if we want the nav bar on this page.
@@ -36,28 +48,53 @@
             // for nav bar
             // margin: 10% 0 0 0;
 
+            @media @tablet {
+                width: 90%;
+                margin: 30% 0 0 0;
+            }
+
+            @media @phone {
+                margin: 10% 0 0 0;
+            } 
+
             h1 {
                 font-size: 6.4rem;
                 margin-bottom: 10%;
+
+                @media @tablet {
+                    font-size: 6rem;
+                } 
             }
 
             p {
-                font-size: 3rem;
-                margin: 0 0 5% 0;
+                font-size: 3.5rem;
+                line-height: 3.4rem;
+                margin: 0 0 5% 0;    
+                
+                @media @phone {
+                    margin: 0 0 10% 0;
+                } 
             }
+
             a {
                 color: @white;
                 text-decoration: none;
                 margin: 10% 0 0 15%;
 
+                @media @phone {
+                    margin: 10% auto;
+                } 
+
                 .button {
                     background-color:@dodgerblue;
-                    padding: 1.2rem 0 1.4rem;
+                    padding: 20% 20%;
                     border-radius: 3px;
-                    width: 10.5rem;
-                    height: 3.8rem;
                     font-size: 1.3rem;
                     text-align: center;
+
+                    @media @phone {
+                        
+                    } 
                 
                     &:hover {
                         background-color: @white;
@@ -67,6 +104,26 @@
                 }
             }
         }
+
+        .second-logo {
+            width: 125%;
+            display: none;
+            margin: -13% 5% 0 0;
+
+            @media @tablet {
+                display: flex;
+                justify-content: flex-end;
+        
+
+                img {
+                    width: 35%
+                }
+            }
+
+            @media @phone {
+                display: none;
+            }
+        }
     }
 
     .content-logo-about {
@@ -74,6 +131,10 @@
         width: 40%;
         display: flex;
         justify-content: flex-end;
+
+        @media @tablet {
+            display: none;
+        }
 
         .title-logo-about {
             width: 90%;
