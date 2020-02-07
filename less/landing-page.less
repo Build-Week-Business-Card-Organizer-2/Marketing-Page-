@@ -1,0 +1,194 @@
+.container-cta {
+    .main-container();
+
+    .content-signup {
+        background-color: @primary;
+        .box(column, center, flex-start, 40%);
+
+        @media @tablet {
+            width: 80%;
+            margin-left: 10%;
+            justify-content: space-between;
+        }
+
+        @media @phone {
+            width: 100%;
+            margin-left: 0;
+            justify-content: flex-start;       
+        }
+        
+        nav {
+            .box(row, center, flex-end, 100%);
+            margin-top: 8%;
+
+            @media @tablet {
+                margin-top: 10%;
+            }
+
+            @media @phone {
+                margin: 10% 10% 0 0;   
+            }
+        
+            a {
+                color: @white;
+                text-decoration: none;
+                font-size: 1.7rem;
+                margin-left: 5%;
+
+                &:last-child {
+                    margin-right: 5%;
+                }
+
+                &:hover {
+                    color: @shiraz;
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .form {
+            .box(column, center, center, 62%);
+            margin: 10% 0 0 17.5%;
+
+            @media @tablet {
+                width: 68%;
+                margin-top: 10%;
+            }
+
+            @media @phone {
+                width: 90%;
+                margin: 10% 0 0 5%;
+            }
+
+            h1 {
+                color: @white;
+                font-size: 6.4rem;
+                margin: 5% auto 15%;
+
+                @media @tablet {
+                    margin: 5% auto 10%;
+                }
+
+                @media @phone {
+                    font-size: 5rem;
+                    margin-bottom: 5%;
+                }
+            }
+
+            form {
+                width: 100%;
+
+
+                input {
+                    width: 100%;
+                    padding: 4% 0% 4% 3%;
+                    border-radius: 3px 3px 0 0;
+                    border-top: none;
+                    border-left: none;
+                    border-right: none;
+                    border-bottom: 1px solid @bright-grey;
+
+                    @media @tablet {
+                        padding: 5% 0% 5% 4%;
+                    }
+                }
+
+                p {
+                    font-size: 1.2rem;
+                    margin: 1% 0 3% 4%;
+                    color: @bright-grey;
+
+                    @media @tablet {
+                        margin: 2% 0 6% 4%;
+                    }
+                }
+
+                a {
+                    font-size: 1.2rem;
+                    text-decoration: none;
+                    color: @shiraz;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+
+                .last-input {
+                    .box(row, center, space-between, 100%);
+                }
+            }
+        }
+
+        .the-button{
+            width: 35%;
+            text-decoration: none;
+            margin: 10% auto;
+            .customButton(#CCCCCC, @white, 100%);
+
+            @media @tablet {
+                margin: 10% 0 0 10%;
+            }
+
+            @media @phone {
+                margin: 10% auto;
+            }
+
+            .button {
+                padding-bottom: 10%;
+            }
+        }
+
+
+        .second-logo {
+            width: 110%;
+            display: none;
+            margin: -13% -5% 0 0;
+
+            @media @tablet {
+                display: flex;
+                justify-content: flex-end;
+        
+
+                img {
+                    width: 35%
+                }
+            }
+
+            @media @phone {
+                display: none;
+            }
+        }
+    }
+
+    .content-cta {
+        width: 60%;
+        display: flex;
+        justify-content: flex-end;
+
+        @media @tablet {
+            display: none;
+            
+        }
+
+        .right-side-cta {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            margin-right: 2%;
+
+            h2 {
+                color: @white;
+                text-align: center;
+                padding: 15% 0 10% 0;
+            }
+
+            .logo-cta {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}
