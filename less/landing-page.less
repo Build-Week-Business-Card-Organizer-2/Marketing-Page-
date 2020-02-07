@@ -1,15 +1,9 @@
 .container-cta {
-    display: flex;
-    height: 100vh;
-    overflow-y: hidden;
+    .main-container();
 
     .content-signup {
         background-color: @primary;
-        width: 40%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
+        .box(column, center, flex-start, 40%);
 
         @media @tablet {
             width: 80%;
@@ -24,10 +18,12 @@
         }
         
         nav {
-            display: flex;
-            justify-content: flex-end;
-            width: 100%;
-            margin: 15% 10% 0 0;
+            .box(row, center, flex-end, 100%);
+            margin-top: 8%;
+
+            @media @tablet {
+                margin-top: 10%;
+            }
 
             @media @phone {
                 margin: 10% 10% 0 0;   
@@ -36,35 +32,42 @@
             a {
                 color: @white;
                 text-decoration: none;
-                font-size: 2rem;
+                font-size: 1.7rem;
+                margin-left: 5%;
+
+                &:last-child {
+                    margin-right: 5%;
+                }
 
                 &:hover {
                     color: @shiraz;
+                    text-decoration: underline;
                 }
             }
         }
+
         .form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 62%;
-            margin: 15% 0 0 0;
+            .box(column, center, center, 62%);
+            margin: 10% 0 0 17.5%;
 
             @media @tablet {
-                width: 60%;
-                margin-top: 20%;
+                width: 68%;
+                margin-top: 10%;
             }
 
             @media @phone {
                 width: 90%;
-                margin-top: 10%;
+                margin: 10% 0 0 5%;
             }
 
             h1 {
                 color: @white;
                 font-size: 6.4rem;
-                margin-bottom: 15%;
+                margin: 5% auto 15%;
+
+                @media @tablet {
+                    margin: 5% auto 10%;
+                }
 
                 @media @phone {
                     font-size: 5rem;
@@ -86,7 +89,7 @@
                     border-bottom: 1px solid @bright-grey;
 
                     @media @tablet {
-                        padding: 6% 0% 6% 5%;
+                        padding: 5% 0% 5% 4%;
                     }
                 }
 
@@ -111,55 +114,35 @@
                 }
 
                 .last-input {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                    width: 100%;
+                    .box(row, center, space-between, 100%);
                 }
             }
         }
-        
-        .button {
-            background-color: #CCCCCC;
-            border-radius: 3px;
-            padding: 3% 7%;
-            margin: 10% 0 0 0;
-            
-            &:hover {
-                    background-color: @white;
-                    border: 1px solid @bright-grey;
 
-                    a {
-                        color: @bright-grey;
-                    }
-                }
-
-            a {
-                color: @white;
-                text-decoration: none;
-            }
+        .the-button{
+            width: 35%;
+            text-decoration: none;
+            margin: 10% auto;
+            .customButton(#CCCCCC, @white, 100%);
 
             @media @tablet {
-                padding: 4% 10%;
-
-                a {
-                    font-size: 1.5rem;
-                }
+                margin: 10% 0 0 10%;
             }
 
             @media @phone {
-                padding: 4% 10%;
+                margin: 10% auto;
+            }
 
-                a {
-                    font-size: 2rem;
-                }
+            .button {
+                padding-bottom: 10%;
             }
         }
 
+
         .second-logo {
-            width: 125%;
+            width: 110%;
             display: none;
-            margin: -13% 5% 0 0;
+            margin: -13% -5% 0 0;
 
             @media @tablet {
                 display: flex;
@@ -198,7 +181,7 @@
             h2 {
                 color: @white;
                 text-align: center;
-                padding: 25% 0 10% 0;
+                padding: 15% 0 10% 0;
             }
 
             .logo-cta {
