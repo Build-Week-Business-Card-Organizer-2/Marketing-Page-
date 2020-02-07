@@ -1,0 +1,60 @@
+// Mixins Here
+
+.main-container(){
+    display: flex;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.flexbox() {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.customButton(@btn-color, @color, @width) {
+    .button {
+        color: @color;
+        padding: 10% 0 2%;
+        .flexbox();
+        background-color: @btn-color;
+        width: @width;
+        border-radius: 3px;
+        font-size: 1.5rem;
+        text-decoration: none;
+
+        @media @phone {
+            padding: 7% 0 0;
+        }
+
+        p {
+            font-size: 1.8rem; 
+            line-height: normal;
+
+            @media @phone {
+                font-size: 1.8rem;
+            }
+    
+        }
+
+        &:hover {
+            background-color: @color;
+            border: 1px solid @btn-color;
+            cursor: pointer;
+
+            p {
+                color: @btn-color;
+            }
+        }
+    }
+}
+
+.box(@direction, @align, @justify, @width) {
+    display: flex;
+    flex-direction: @direction;
+    align-content: @align;
+    justify-content: @justify;
+    width: @width;
+    
+}
+
