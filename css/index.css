@@ -201,12 +201,13 @@ body .left-container .sign-up-container h2 {
   font-size: 4rem;
   color: white;
 }
-body .left-container .sign-up-container button {
+body .left-container .sign-up-container a {
   width: 15%;
   color: white;
   padding: 1%;
   border-radius: 4px;
   border: none;
+  text-align: center;
   background-color: #CCCCCC;
 }
 body .right-container {

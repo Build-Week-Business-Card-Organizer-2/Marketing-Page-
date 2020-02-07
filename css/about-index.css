@@ -192,12 +192,13 @@ body .left-container .text-container h2 {
   color: white;
   font-size: 4rem;
 }
-body .left-container .text-container button {
+body .left-container .text-container a {
   width: 15%;
   padding: 1%;
   background-color: dodgerblue;
   color: white;
   border: none;
+  text-align: center;
   border-radius: 4px;
 }
 body .right-container {
